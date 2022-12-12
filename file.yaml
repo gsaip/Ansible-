@@ -1,0 +1,8 @@
+---
+- hosts: saiprasad
+  become: yes
+  tasks:
+    - name: creating a file
+      file:
+        path: /home/ec2-user/filename2
+        state: touch
